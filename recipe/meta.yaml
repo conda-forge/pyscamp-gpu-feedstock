@@ -21,7 +21,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}  # [(win64 or linux64) and cuda_compiler_version != "None"]
-    - cmake
+    - cmake 3.18
     - make  # [not win]
     - jom  # [win]
 
