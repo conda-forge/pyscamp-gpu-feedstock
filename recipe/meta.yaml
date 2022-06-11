@@ -23,7 +23,7 @@ requirements:
     - {{ compiler('cuda') }}  # [(win64 or linux64) and cuda_compiler_version != "None"]
     - cmake
     - make  # [not win]
-    - ninja  # [win]
+    - jom  # [win]
 
   host:
     - cudatoolkit
