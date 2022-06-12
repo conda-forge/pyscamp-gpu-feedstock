@@ -7,14 +7,14 @@ package:
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/1e/7d/04f2935a8e7863346cef8ecd266ca56d4f30dbe2095c2c08d0d1999a3b81/pyscamp-3.0.4.dev9.tar.gz
-  sha256: 0f3f7b91fe88a16a79668e3f3ee578524660e121062b8e4534cd40c99454b965
+  url: https://test-files.pythonhosted.org/packages/cc/00/dc1f12f61dbc20d26acc167e32c7e126277917042a4aec8b9465f240399a/pyscamp-3.0.4.dev10.tar.gz
+  sha256: 4574ea6236cb14a01d37e06e575c5c44167ca39f8df30661cddba188dd63b9bb
   #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyscamp-{{ version }}.tar.gz
   #sha256: 047e699f69a087b72af1ea681821d9da37fa3b805abb9ab2396baf6b530a1a11
 
 build:
   number: 1
-  skip: True  # [cuda_compiler_version == "None"]
+  skip: True  # [cuda_compiler_version == "None" or cuda_compiler_version == "10.2"]
 
 requirements:
   build:
@@ -25,14 +25,14 @@ requirements:
     - make  # [not win]
 
   host:
-    - cudatoolkit
+    - cudatoolkit >= 11
     - python
     - setuptools-scm
     - pybind11 2.9.2
     - eigen 3.4.0
 
   run:
-    - cudatoolkit
+    - cudatoolkit >= 11
     - python
 
 
