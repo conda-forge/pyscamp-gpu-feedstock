@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/cc/00/dc1f12f61dbc20d26acc167e32c7e126277917042a4aec8b9465f240399a/pyscamp-3.0.4.dev10.tar.gz
-  sha256: 4574ea6236cb14a01d37e06e575c5c44167ca39f8df30661cddba188dd63b9bb
+  url: https://test-files.pythonhosted.org/packages/46/68/0f3c506f508ddf009260b026e7012dd899650ef14254e89eeca83b219a0d/pyscamp-3.0.4.dev13.tar.gz
+  sha256: 7c1e9e4036413a56fb3a55870e7e65816bcff51f351d6622d47616f739137dca
   #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyscamp-{{ version }}.tar.gz
   #sha256: 047e699f69a087b72af1ea681821d9da37fa3b805abb9ab2396baf6b530a1a11
 
