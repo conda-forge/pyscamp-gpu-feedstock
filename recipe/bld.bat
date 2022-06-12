@@ -9,5 +9,6 @@ SET PYSCAMP_ADD_CMAKE_ARGS=--trace-expand
 SET CUDAToolkit_ROOT=%CUDA_PATH%
 SET CUDACXX=%CUDA_PATH%\bin\nvcc.exe
 SET VERBOSE=ON
+del %BUILD_PREFIX%\bin\nvcc.bat
 SET
 "%PYTHON%" setup.py install
