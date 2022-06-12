@@ -25,14 +25,14 @@ requirements:
     - make  # [not win]
 
   host:
-    - cudatoolkit >= 11
+    - cudatoolkit >=11
     - python
     - setuptools-scm
     - pybind11 2.9.2
     - eigen 3.4.0
 
   run:
-    - cudatoolkit >= 11
+    - cudatoolkit >=11
     - python
 
 
