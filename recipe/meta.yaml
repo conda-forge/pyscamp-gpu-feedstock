@@ -1,5 +1,5 @@
 {% set name = "pyscamp" %}
-{% set version = "3.0.3" %}
+{% set version = "4.0.0" %}
 
 
 package:
@@ -7,13 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/46/68/0f3c506f508ddf009260b026e7012dd899650ef14254e89eeca83b219a0d/pyscamp-3.0.4.dev13.tar.gz
-  sha256: 7c1e9e4036413a56fb3a55870e7e65816bcff51f351d6622d47616f739137dca
-  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyscamp-{{ version }}.tar.gz
-  #sha256: 047e699f69a087b72af1ea681821d9da37fa3b805abb9ab2396baf6b530a1a11
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyscamp-{{ version }}.tar.gz
+  sha256: 7cbcd1400c18b908aea8be0cb9fcb6305500ff29737f67db456ff607308af8e4
 
 build:
-  number: 1
+  number: 0
   skip: True  # [cuda_compiler_version == "None" or cuda_compiler_version == "10.2"]
 
 requirements:
