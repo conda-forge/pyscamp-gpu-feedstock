@@ -26,7 +26,7 @@ requirements:
     - cudatoolkit >=11
     - python
     - setuptools-scm
-    - pybind11 2.9
+    - pybind11 >=2.10
     - eigen 3.4.0
 
   run:
