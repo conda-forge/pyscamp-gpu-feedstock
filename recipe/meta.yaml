@@ -28,6 +28,7 @@ requirements:
     - setuptools-scm
     - pybind11 >=2.10
     - eigen 3.4.0
+    - libcufft-dev      # [(cuda_compiler_version or "").startswith("12")]
 
   run:
     - python
