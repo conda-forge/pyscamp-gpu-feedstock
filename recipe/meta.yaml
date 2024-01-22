@@ -18,7 +18,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - {{ compiler('cuda') }}  # [(win64 or linux64) and cuda_compiler_version != "None"]
+    - {{ compiler('cuda') }}
     - cmake
     - make  # [not win]
     - ninja  # [win]
