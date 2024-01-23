@@ -11,23 +11,26 @@ source:
   sha256: fbdacfbdbd51e319732eafc1ffee2ce0a5e893f9eb610f71ae67d503f3aba66a
 
 build:
-  number: 0
-  skip: true  # [cuda_compiler_version == "None" or cuda_compiler_version == "10.2"]
+  number: 1
+  skip: true  # [cuda_compiler_version == "None"]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - {{ compiler('cuda') }}  # [(win64 or linux64) and cuda_compiler_version != "None"]
+    - {{ compiler('cuda') }}
     - cmake
     - make  # [not win]
     - ninja  # [win]
 
   host:
+    - cuda-version {{ cuda_compiler_version }}
     - python
     - setuptools-scm
     - pybind11 >=2.10
     - eigen 3.4.0
+    - cuda-cudart-dev   # [(cuda_compiler_version or "").startswith("12")]
+    - libcufft-dev      # [(cuda_compiler_version or "").startswith("12")]
 
   run:
     - python
