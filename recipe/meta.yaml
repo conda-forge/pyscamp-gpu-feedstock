@@ -20,7 +20,7 @@ requirements:
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}
-    - cmake
+    - cmake <4
     - make  # [not win]
     - ninja  # [win]
 
