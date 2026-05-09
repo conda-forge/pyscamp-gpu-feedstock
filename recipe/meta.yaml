@@ -32,6 +32,7 @@ requirements:
     - eigen 3.4.0
     - cuda-cudart-dev
     - libcufft-dev
+    - cuda-cccl
 
   run:
     - python
