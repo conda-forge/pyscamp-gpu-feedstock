@@ -1,13 +1,13 @@
 {% set name = "pyscamp" %}
-{% set version = "4.0.3.dev3" %}
+{% set version = "4.0.3" %}
 
 package:
   name: {{ name|lower }}-gpu
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/92/7a/73c8815cf3e5c97fb180ca90f9876a4bbe1e3f325a0ee3de479febf88d0c/pyscamp-{{ version }}.tar.gz
-  sha256: 76c78244cf89a3f03f4e6b66c899fc3b81c0e45477a42a34b2819d37ebb93173
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyscamp-{{ version }}.tar.gz
+  sha256: 4681d2e850e3dae40b4266d2b11737e077af49aa6c55d99fbccece170f8e68bc
 
 build:
   number: 1
